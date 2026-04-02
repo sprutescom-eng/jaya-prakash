@@ -18,23 +18,18 @@ const Industries = () => {
       name: "Construction",
       description: "Manage projects, labor, equipment, and materials. Keep your builders on track and within budget.",
       icon: <Hammer className="w-10 h-10" />,
-      image: "https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&fit=crop&q=80&w=800"
+      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=800"
     }
   ];
 
   return (
-    <section id="industries" className="py-24">
+    <section id="industries" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
-          <div className="max-w-2xl">
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">Industry-Specific Solution</h2>
-            <p className="text-lg text-slate-600">
-              Generic software doesn't cut it. We've built specialized workflows for the industries that power the world.
-            </p>
-          </div>
-          <button className="text-brand-600 font-bold flex items-center hover:underline">
-            View all industries <ChevronRight className="ml-1 w-5 h-5" />
-          </button>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Industry-Specific Solution</h2>
+          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+            Generic software doesn't cut it. We've built specialized workflows for the industries that power the world.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
