@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
       {/* Background Accents */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10">
-        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-brand-100/50 rounded-full blur-3xl opacity-60 animate-pulse" />
+        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-brand-100/50 rounded-full blur-3xl opacity-60" />
         <div className="absolute bottom-[-10%] right-[-10%] w-[30%] h-[30%] bg-brand-200/40 rounded-full blur-3xl opacity-40" />
       </div>
 
@@ -55,17 +55,24 @@ const Hero = () => {
             <div className="aspect-[16/9] bg-slate-50 flex items-center justify-center">
                <div className="grid grid-cols-3 gap-6 p-8 w-full h-full">
                   <div className="col-span-2 bg-white rounded-xl shadow-sm border border-slate-100 p-6 flex flex-col space-y-4">
-                    <div className="h-8 w-1/3 bg-slate-100 rounded animate-pulse" />
+                    <div className="text-sm font-bold text-slate-400 uppercase tracking-wider">Revenue Overview</div>
                     <div className="flex-1 grid grid-cols-2 gap-4">
-                      <div className="bg-brand-50/50 rounded-lg" />
-                      <div className="bg-brand-50/50 rounded-lg" />
+                      <div className="bg-brand-50/50 rounded-lg flex items-end p-4">
+                        <div className="w-full bg-brand-200 h-1/2 rounded-t-lg" />
+                      </div>
+                      <div className="bg-brand-50/50 rounded-lg flex items-end p-4">
+                        <div className="w-full bg-brand-400 h-3/4 rounded-t-lg" />
+                      </div>
                     </div>
                   </div>
                   <div className="bg-white rounded-xl shadow-sm border border-slate-100 p-6 flex flex-col space-y-4">
-                    <div className="h-8 w-1/2 bg-slate-100 rounded animate-pulse" />
-                    <div className="h-4 w-full bg-slate-50 rounded" />
-                    <div className="h-4 w-full bg-slate-50 rounded" />
-                    <div className="h-4 w-full bg-slate-50 rounded" />
+                    <div className="text-sm font-bold text-slate-400 uppercase tracking-wider">Recent Activity</div>
+                    <div className="space-y-3">
+                      <div className="h-2 w-full bg-slate-100 rounded" />
+                      <div className="h-2 w-3/4 bg-slate-100 rounded" />
+                      <div className="h-2 w-full bg-slate-100 rounded" />
+                      <div className="h-2 w-1/2 bg-slate-100 rounded" />
+                    </div>
                   </div>
                </div>
             </div>
